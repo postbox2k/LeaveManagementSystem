@@ -12,7 +12,7 @@ Learn to how:
 - Manage Packages with NuGet Manager
 - Implement Website Layout using AdminLTE Theme
 - Setup GitHub for Source Control
-Developed With the Help of Website: [Trevoir Williams | Blog](http://bit.ly/2ux9hcn) 
+- Developed With the Help of Website: [Trevoir Williams | Blog](http://bit.ly/2ux9hcn) 
 
 # To Configure For Local Use
 - Clone Repository To Local Computer
