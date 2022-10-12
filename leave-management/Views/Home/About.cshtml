@@ -1,0 +1,63 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "About Page";
+}
+<html>
+<head>
+    <style>
+        body {
+            margin: 5px 0;
+        }
+
+        .card {
+            border-radius: 8px;
+            border: 1px solid #cccccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            box-sizing: border-box;
+            width: 300px;
+            height: 300px;
+            transition: all linear 200ms;
+        }
+
+            .card:hover {
+                transform: scale(1.1);
+                transition: all linear 200ms;
+                z-index: 1;
+                box-shadow: 1px 1px 10px rgba(0,0,0,.3);
+                cursor: pointer;
+            }
+      
+            .container{
+                padding-left:25px;
+            }
+            body{
+            font-family: 'Cascadia Mono';
+            }
+    </style>
+</head>
+<body>
+    <div class="text-center alert" style="background:linear-gradient(#94bbe9,#fdbb2d)">
+    <h1 class="display-4"><b>About</b></h1>
+</div>
+<div class="jumbotron seek">
+    
+    <div class="container d-flex flex-wrap align-items-center">
+            <div class="m-4"><img class="card" alt="" src="~/images/leave1.png" /></div>
+            <div class="m-4"><img class="card" alt="" src="~/images/leave2.png" /></div>
+            <div class="m-4"><img class="card" alt="" src="~/images/leave3.png" /></div>
+            <div class="m-4"><img class="card" alt="" src="~/images/leave4.png" /></div>
+            <div class="m-4"><img class="card" alt="" src="~/images/leave5.png" /></div>
+            <div class="m-4"><img class="card" alt="" src="~/images/leave6.png" /></div>
+            <div class="m-4"><img class="card" alt="" src="~/images/leave7.png" /></div>
+            <div class="m-4"><img class="card" alt="" src="~/images/leave8.png" /></div>
+            <div class="m-4"><img class="card" alt="" src="~/images/leave9.png" /></div>
+  
+    </div>
+</div>
+</body>
+</html>

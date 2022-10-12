@@ -4,9 +4,19 @@
 @{
     ViewData["Title"] = "Log in";
 }
-<div class="hold-transition login-page">
+<html>
+    <head>
+        <style>
+            .login-page{
+                    height:80vh !important;   
+            }
+        </style>
+    </head>
+<body>
+    <div class="hold-transition login-page">
+   
     <div class="login-box" >
-        <div class="login-logo" >
+            <div class="login-logo alert alert-primary">
                 <h1>Login to LMS</h1>
             </div>
             <!-- /.login-logo -->
@@ -61,7 +71,8 @@
             </div>
         </div>
     </div>
-
+    </body>
+    </html>
 
 
 @section Scripts {

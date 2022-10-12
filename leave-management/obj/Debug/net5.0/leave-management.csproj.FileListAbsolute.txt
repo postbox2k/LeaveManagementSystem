@@ -462,3 +462,6 @@ C:\Users\LENOVO\OneDrive\Documents\Project\LeaveManagementSystem\leave-managemen
 C:\Users\LENOVO\OneDrive\Documents\Project\LeaveManagementSystem\leave-management-dotnetcore-master\leave-management\obj\Debug\net5.0\leave-management.pdb
 C:\Users\LENOVO\OneDrive\Documents\Project\LeaveManagementSystem\leave-management-dotnetcore-master\leave-management\obj\Debug\net5.0\leave-management.genruntimeconfig.cache
 C:\Users\LENOVO\OneDrive\Documents\Project\LeaveManagementSystem\leave-management-dotnetcore-master\leave-management\obj\Debug\net5.0\ref\leave-management.dll
+C:\Users\LENOVO\OneDrive\Documents\Project\LeaveManagementSystem\leave-management-dotnetcore-master\leave-management\bin\Debug\net5.0\libman.json
+C:\Users\LENOVO\OneDrive\Documents\Project\LeaveManagementSystem\leave-management-dotnetcore-master\leave-management\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\LENOVO\OneDrive\Documents\Project\LeaveManagementSystem\leave-management-dotnetcore-master\leave-management\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs

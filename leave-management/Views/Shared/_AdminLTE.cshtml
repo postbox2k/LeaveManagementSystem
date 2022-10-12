@@ -23,7 +23,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="~/css/dataTables.bootstrap4.min.css" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
+    <style>
+        body{
+            font-family:'Cascadia Mono';
+        }
+    </style>
 </head>
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
@@ -179,6 +183,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a asp-area="" asp-controller="Home" asp-action="About" class="nav-link">
+                                <i class="nav-icon fas fa-address-card"></i>
+                                <p>
+                                    About
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-area="" asp-controller="Home" asp-action="Contact" class="nav-link">
+                                <i class="nav-icon fas fa-user-circle"></i>
+                                <p>
+                                    Contact
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a asp-area="" asp-controller="LeaveRequest" asp-action="Create" class="nav-link">
                                 <i class="nav-icon fas fa-pen-alt"></i>
                                 <p>
@@ -274,10 +294,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <footer class="main-footer">
             <!-- To the right -->
             <div class="float-right d-none d-sm-inline">
-                Styled by <a href="https://adminlte.io">AdminLTE.io</a>
+                Developed by Mavericks
             </div>
             <!-- Default to the left -->
-            <strong>Copyright &copy; @DateTime.Now.Year Core Leave Management System.</strong> All rights reserved.
+            <strong>Copyright &copy; @DateTime.Now.Year Leave Management System.</strong> 
         </footer>
     </div>
     <!-- ./wrapper -->
