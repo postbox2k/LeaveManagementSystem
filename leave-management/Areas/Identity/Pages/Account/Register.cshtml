@@ -3,6 +3,16 @@
 @{
     ViewData["Title"] = "Register";
 }
+<html>
+    <head>
+        <style>
+        .register-page{
+            height: 80vh !important;
+            background-color: #0090 !important;
+        }
+        </style>
+    </head>
+<body>
 
     <div class="hold-transition register-page">
         <div class="register-box">
@@ -10,8 +20,8 @@
                 Create a New Account
             </div>
 
-            <div class="card">
-                <div class="card-body register-card-body">
+            <div class="card" style=" background-color: #e3f2fd; border-radius:20px">
+                <div class="card-body register-card-body" style=" background-color: #e3f2fd; border-radius:20px">
                     <hr />
                     <div asp-validation-summary="All" class="text-danger"></div>
                     <form method="post">
@@ -72,7 +82,8 @@
         </div>
         <!-- /.register-box -->
     </div>
-
+    </body>
+    </html>
         @section Scripts {
             <partial name="_ValidationScriptsPartial" />
         }
