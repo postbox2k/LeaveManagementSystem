@@ -1,4 +1,4 @@
-# Core Leave Management
+# Leave Management System
 .NET Core Leave Management Application for educational purposes and is built in part for [Udemy](http://bit.ly/30oniUV)/[SkillShare](https://skl.sh/2TjAJ7f) course entitled: "Complete ASP.NET Core and Entity Framework Development"
 Learn to how:
 - Build a fully data driven web application using cutting edge technology 
@@ -12,8 +12,7 @@ Learn to how:
 - Manage Packages with NuGet Manager
 - Implement Website Layout using AdminLTE Theme
 - Setup GitHub for Source Control
-
-Website: [Trevoir Williams | Blog](http://bit.ly/2ux9hcn) 
+- Developed With the Help of Website: [Trevoir Williams | Blog](http://bit.ly/2ux9hcn) 
 
 # To Configure For Local Use
 - Clone Repository To Local Computer
