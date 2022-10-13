@@ -4,11 +4,11 @@
     ViewData["Title"] = "Edit";
 }
 
-    <h1>Editing @Model.LeaveType.Name Allocation for @Model.Employee.Lastname, @Model.Employee.Firstname  </h1>
+    <h2>@Model.LeaveType.Name Allocation -- @Model.Employee.Lastname, @Model.Employee.Firstname  </h2>
 
 
 <hr />
-<div class="row">
+<div class="row justify-content-center">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -23,10 +23,11 @@
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
+        <div>
+            <a class="btn btn-outline-secondary btn-block" asp-action="Details" asp-route-id="@Model.EmployeeId">Back to Details</a>
+        </div>
     </div>
 </div>
 
-<div>
-    <a class="btn btn-outline-secondary btn-block" asp-action="Details" asp-route-id="@Model.EmployeeId">Back to Details</a>
-</div>
+
 

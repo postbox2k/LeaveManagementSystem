@@ -9,7 +9,8 @@
         {
 
             <li class="nav-item">
-                <a class="nav-link text-black" asp-area="Identity" asp-page="" title="Manage">
+            <a class="nav-link text-black" asp-area="Identity" asp-controller="Home" asp-action="Index" title="Manage">
+                <!--asp-page="/Account/Manage/Index"-->
                     <i class="fas fa-user-alt"></i>
                     <p>@User.Identity.Name</p>
                 </a>

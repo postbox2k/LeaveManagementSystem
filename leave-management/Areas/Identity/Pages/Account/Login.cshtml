@@ -11,6 +11,9 @@
                     height:80vh !important;   
                     background-color: #0090 !important;
             }
+            .login-box{
+                margin:auto;
+            }
         </style>
     </head>
 <body>
@@ -18,7 +21,7 @@
    
     <div class="login-box" >
             <div class="login-logo alert alert-primary" >
-                <h1>Login to LMS</h1>
+                <h2>Login to LMS</h2>
             </div>
             <!-- /.login-logo -->
             <div class="card" style=" background-color: #e3f2fd; border-radius:20px">
@@ -44,15 +47,15 @@
                             </div><br />
                         </div>
                         <span asp-validation-for="Input.Password" class="text-danger"></span>
-                        <div class="row">
-                            <div class="col-8">
+                        <div class="row justify-content-end">
+                            <!--<div class="col-8">
                                 <div class="icheck-primary">
                                     <input type="checkbox" id="remember">
                                     <label for="remember">
                                         Remember Me
                                     </label>
                                 </div>
-                            </div>
+                            </div>-->
                             <!-- /.col -->
                             <div class="col-4">
                                 <button type="submit" class="btn btn-primary btn-block">Sign In</button>
@@ -65,7 +68,7 @@
                         <a asp-page="./ForgotPassword">I forgot my password</a>
                     </p>-->
                     <p class="mb-0">
-                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl" class="text-center">Register</a>
+                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl" class="text-center" style="color:red !important">Click here to Register</a>
                     </p>
                 </div>
                 <!-- /.login-card-body -->

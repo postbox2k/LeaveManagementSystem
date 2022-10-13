@@ -4,7 +4,7 @@
     ViewData["Title"] = "Details";
 }
 
-    <h1>Details For - @Model.Employee.Lastname, @Model.Employee.Firstname</h1>
+    <h2>Details For - @Model.Employee.Lastname, @Model.Employee.Firstname</h2>
 
 <div>
     <hr />
@@ -64,18 +64,19 @@
 <hr />
 
 <h2>Leave Allocations</h2>
-
-    <div class="card" >
+<div class=" col-md-6 justify-content-center">
+    <div class="card " >
         <ul class="list-group list-group-flush">
             @foreach (var item in Model.LeaveAllocations)
             {
             <li class="list-group-item">
-                <h6>@item.LeaveType.Name <span class="badge badge-secondary">@item.NumberOfDays</span>       <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-warning "><i class="fa fa-pencil"></i> Edit</a> </h6>
+                <h6>@item.LeaveType.Name <span class="badge badge-secondary">@item.NumberOfDays</span> <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-warning "><i class="fa fa-pencil"></i> Edit</a> </h6>
             </li>
             }
         </ul>
     </div>
+    </div>
 <br/>
-    <div>
+<div class=" col-md-3 justify-content-center">
         <a class="btn btn-outline-secondary btn-block" asp-action="Index">Back to List</a>
     </div>

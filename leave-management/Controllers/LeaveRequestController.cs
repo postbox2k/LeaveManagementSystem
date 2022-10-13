@@ -6,7 +6,7 @@ using AutoMapper;
 using leave_management.Contracts;
 using leave_management.Data;
 using leave_management.Models;
-using leave_management.Services;
+//using leave_management.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -21,18 +21,18 @@ namespace leave_management.Controllers
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-        private readonly IEmailSender _emailSender;
+        //private readonly IEmailSender _emailSender;
         private readonly UserManager<Employee> _userManager;
 
         public LeaveRequestController(
             IUnitOfWork unitOfWork,
-            IEmailSender emailSender,
+            //IEmailSender emailSender,
             IMapper mapper,
             UserManager<Employee> userManager
         )
         {
             _unitOfWork = unitOfWork;
-            _emailSender = emailSender;
+           // _emailSender = emailSender;
             _mapper = mapper;
             _userManager = userManager;
         }
@@ -67,9 +67,10 @@ namespace leave_management.Controllers
 
             var employeeRequests = await _unitOfWork.LeaveRequests
                 .FindAll(q => q.RequestingEmployeeId == employeeid);
-
+            var rev=employeeRequests.Reverse();
+            //Console.Write(rev);
             var employeeAllocationsModel = _mapper.Map<List<LeaveAllocationVM>>(employeeAllocations);
-            var employeeRequestsModel = _mapper.Map<List<LeaveRequestVM>>(employeeRequests);
+            var employeeRequestsModel = _mapper.Map<List<LeaveRequestVM>>(rev);
 
             var model = new EmployeeLeaveRequestViewVM
             {
@@ -86,6 +87,7 @@ namespace leave_management.Controllers
         {
             var leaveRequest = await _unitOfWork.LeaveRequests.Find(q => q.Id == id,
                 includes: q => q.Include(x => x.RequestingEmployee).Include(x => x.LeaveType).Include(x => x.ApprovedBy));
+
             var model = _mapper.Map<LeaveRequestVM>(leaveRequest);
             return View(model);
         }

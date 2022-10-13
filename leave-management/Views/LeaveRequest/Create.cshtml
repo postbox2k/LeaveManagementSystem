@@ -4,12 +4,12 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h2>Request For Leave</h2>
 
 
 <hr />
-<div class="row">
-    <div class="col-md-12">
+<div class="row justify-content-center">
+    <div class="col-md-6 ">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -49,8 +49,10 @@
     </div>
 </div>
 
-<div>
-    <a class="btn btn-secondary btn-block" asp-action="Index">Back to List</a>
+<div class="row justify-content-center">
+    <div class="col-md-6 ">
+        <a class="btn btn-secondary btn-block" asp-controller="LeaveRequest" asp-action="MyLeave">Back to List</a><!-- asp-action="Index"-->
+    </div>
 </div>
 
 @section Scripts{

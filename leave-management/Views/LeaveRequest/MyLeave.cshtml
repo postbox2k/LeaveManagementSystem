@@ -4,8 +4,8 @@
     ViewData["Title"] = "MyLeave";
 }
 
-<h1>My Leave Allocations</h1>
-<div class="jumbotron">
+<h2>Allocations</h2>
+<div class="jumbotron col-md-6">
     <div class="card">
         <ul class="list-group list-group-flush">
             @foreach (var item in Model.LeaveAllocations)
@@ -20,9 +20,10 @@
 
 
 <hr/>
-<h1>My Leave Records</h1>
-<table id="tblData" class="table">
-    <thead>
+<h1>Request Records</h1>
+<table class="table table-dark">
+    <!--id="tblData"-->
+    <thead >
         <tr>
             <th>
                 Leave Type
