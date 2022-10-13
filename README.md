@@ -1,5 +1,5 @@
 # Leave Management System
-#### Completely Done for Learning Purposes
+#### <span style="color:red">Completely Done for Learning Purposes</span>
 .NET Core Leave Management Application for educational purposes and is built in part for [Udemy](http://bit.ly/30oniUV)/[SkillShare](https://skl.sh/2TjAJ7f) course entitled: "Complete ASP.NET Core and Entity Framework Development"
 Learn to how:
 - Build a fully data driven web application using cutting edge technology 
