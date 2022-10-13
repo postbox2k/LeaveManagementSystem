@@ -186,10 +186,7 @@ namespace leave_management.Controllers
                 });
                 model.LeaveTypes = leaveTypeItems;
 
-                if (startDate == endDate)
-                {
-                    ModelState.AddModelError("", "Invalid Request ");
-                }
+                
                 if (allocation == null)
                 {
                     ModelState.AddModelError("", "You Have No Days Left");
@@ -198,11 +195,15 @@ namespace leave_management.Controllers
                 {
                     ModelState.AddModelError("", "Start Date cannot be further in the future than the End Date");
                 }
-                
-              //  if (daysRequested > allocation.NumberOfDays)
-               // {
-               //     ModelState.AddModelError("", "You Do Not Sufficient Days For This Request");
-               // }
+                if (startDate == endDate)
+                {
+                    ModelState.AddModelError("", "Invalid Request ");
+                }
+
+                 if (daysRequested > allocation.NumberOfDays)
+                {
+                     ModelState.AddModelError("", "You Do Not Sufficient Days For This Request");
+                }
                 if (!ModelState.IsValid)
                 {
                     return View(model);

@@ -4,10 +4,12 @@
 @inject UserManager<Employee> UserManager
 
     <ul class="nav nav-pills nav-sidebar flex-column">
+
         @if (SignInManager.IsSignedIn(User))
         {
+
             <li class="nav-item">
-                <a class="nav-link text-black" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
+                <a class="nav-link text-black" asp-area="Identity" asp-page="" title="Manage">
                     <i class="fas fa-user-alt"></i>
                     <p>@User.Identity.Name</p>
                 </a>

@@ -198,7 +198,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item">
+                       <!-- <li class="nav-item">
                             <a asp-area="" asp-controller="LeaveRequest" asp-action="Create" class="nav-link">
                                 <i class="nav-icon fas fa-pen-alt"></i>
                                 <p>
@@ -213,7 +213,29 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     My Leave
                                 </p>
                             </a>
-                        </li>
+                        </li>-->
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            if (User.IsInRole("Employee"))
+                            {
+                                <li class="nav-item">
+                                    <a asp-area="" asp-controller="LeaveRequest" asp-action="Create" class="nav-link">
+                                        <i class="nav-icon fas fa-pen-alt"></i>
+                                        <p>
+                                            Apply For Leave
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-area="" asp-controller="LeaveRequest" asp-action="MyLeave" class="nav-link">
+                                        <i class="nav-icon fas fa-book-open"></i>
+                                        <p>
+                                            My Leave
+                                        </p>
+                                    </a>
+                                </li>
+                            }
+                        }
                         @if (SignInManager.IsSignedIn(User))
                         {
                             if (User.IsInRole("Administrator"))
