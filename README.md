@@ -1,6 +1,6 @@
-# Leave Management System
-#### <span style="color:red">*Completely Done for Learning Purposes*</span>
-.NET Core Leave Management Application for educational purposes and is built in part for [Udemy](http://bit.ly/30oniUV)/[SkillShare](https://skl.sh/2TjAJ7f) course entitled: "Complete ASP.NET Core and Entity Framework Development"
+## Leave Management System
+#### Completely Done for Learning Purposes
+ASP.NET CORE MVC Leave Management Application for educational purposes and is built in part for [Udemy](http://bit.ly/30oniUV) course entitled: "Complete ASP.NET Core and Entity Framework Development"
 Learn to how:
 - Build a fully data driven web application using cutting edge technology 
 - Connect to a Database using Entity Framework Core
@@ -15,7 +15,7 @@ Learn to how:
 - Setup GitHub for Source Control
 - Developed With the Help of Website: [Trevoir Williams | Blog](http://bit.ly/2ux9hcn) 
 
-# To Configure For Local Use
+## To Configure For Local Use
 - Clone Repository To Local Computer
 - Open Project in Visual Studio
 - Edit "DefaultConnection" to point to preferred database
